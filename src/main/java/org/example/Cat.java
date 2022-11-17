@@ -1,14 +1,22 @@
 package org.example;
 
+import java.awt.*;
+
 public class Cat extends Predator{
     private String breed;
 
+    public Cat(double weight, Color color, String breed) {
+        super(weight, color);
+        this.breed = breed;
+    }
+
+
     public String sleep() {
-        return "zzzz";
+        return "sleep";
     }
 
     public String eat() {
-        return "nyam-nyam";
+        return "eat";
     }
 
     public String tigidik() {
@@ -16,7 +24,7 @@ public class Cat extends Predator{
     }
 
     public String lick() {
-        return "lick-lick";
+        return "lick";
     }
 
     public String getActivity(DaysOfWeek day) {
